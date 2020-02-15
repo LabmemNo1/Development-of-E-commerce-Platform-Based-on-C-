@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StoreClass</class>
+ <widget class="QWidget" name="StoreClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Store</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{font-family:Microsoft YaHei;font-size:12px;}
+
+/*上半部分widget*/
+QWidget#TopBackWidget{
+	background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.8,stop:0 #86fde8, stop:0.5 #4776E6, stop:1 #8E54E9);
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+
+}
+
+
+/*顶部操作按钮*/
+#P_Min,#P_Close{
+	border:none;
+}
+
+#P_Min:hover,#P_Close:hover{
+	background:rgb(255, 255, 255, 100);
+}
+
+#P_Min:pressed,#P_Close:pressed{
+	background:rgb(255, 255, 255, 150);
+}
+
+
+/*lineedit*/
+QLineEdit{
+	font-size:13px;
+	background:transparent;
+	border:none;
+	border-bottom:1px solid rgb(229, 229, 229);
+}
+
+QLineEdit:hover{
+	border-bottom:1px solid rgb(193,193, 193);
+}
+
+QLineEdit:focus{
+	border-bottom:1px solid rgb(18, 183, 245);
+}
+
+
+/*登录按钮*/
+QPushButton#P_Signin
+{
+    color:white;
+    background-color:rgb(10 , 190 , 254);
+    border-radius:3px;
+}
+
+QPushButton#P_Signin:hover
+{
+    color:white;
+    background-color:rgb(14 , 150 , 254);
+}
+
+QPushButton#P_Signin:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    padding-left:2px;
+    padding-top:2px;
+}
+
+
+/*注册账号*/
+QPushButton#P_Signup{
+	border:none;color:rgb(166, 166, 166);
+}
+
+QPushButton#P_Signup:hover{
+	color:rgb(131,131, 131);
+}
+
+QPushButton#P_Signup:pressed{
+	color:rgb(18, 183, 245);
+}
+
+</string>
+  </property>
+  <widget class="QLabel" name="L_User">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>177</y>
+     <width>11</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="L_Pass">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>227</y>
+     <width>11</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="P_Signin">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>270</y>
+     <width>235</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="P_Signup">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>55</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="LE_PassWord">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>220</y>
+     <width>235</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="LE_UserName">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>170</y>
+     <width>235</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="TopBackWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>430</width>
+     <height>125</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="P_Close">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="P_Min">
+    <property name="geometry">
+     <rect>
+      <x>372</x>
+      <y>0</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="UI_Login">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>84</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="BackGround">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>135</y>
+     <width>430</width>
+     <height>205</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="LE_PassWord_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>270</y>
+     <width>235</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="L_Pass_2">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>277</y>
+     <width>11</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>BackGround</zorder>
+  <zorder>L_User</zorder>
+  <zorder>L_Pass</zorder>
+  <zorder>P_Signin</zorder>
+  <zorder>P_Signup</zorder>
+  <zorder>LE_PassWord</zorder>
+  <zorder>LE_UserName</zorder>
+  <zorder>TopBackWidget</zorder>
+  <zorder>LE_PassWord_2</zorder>
+  <zorder>L_Pass_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Store.qrc"/>
+ </resources>
+ <connections/>
+</ui>
